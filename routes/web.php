@@ -39,5 +39,5 @@ Route::get('dashboard', [App\Http\Controllers\PageController::class, 'dashboard'
     ->middleware('auth:sanctum')
     ->name('dashboard');
 
-Route::resource('notas', App\Http\Controllers\NoteController::class)
+Route::resource('notes', App\Http\Controllers\NoteController::class)
     ->middleware('auth:sanctum');
